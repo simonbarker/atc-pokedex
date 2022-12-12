@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="container" class="center">
+      <h1>All The Pokemon</h1>
+      <div id="flex-container">
+        <div class="card" id="placeholder">
+          <div class="lds-ring">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <div class="title"></div>
+          <img src="" alt="" />
+          <div class="flex-row">
+            <div class="types"></div>
+            <div class="weight"></div>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        Showing 1 to <span id="total-pokemon">20</span>,
+        <span class="action-text" onclick="nextPage()">show more ></span>
+      </div>
+      <div id="backdrop" class="hidden">
+        <div id="modal">
+          <div id="modal-title">Wartortle</div>
+          <img
+            id="modal-image"
+            src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/8.png"
+            alt=""
+          />
+          <div>
+            <canvas id="myChart"></canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="main.js"></script>
+</html>
