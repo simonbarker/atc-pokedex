@@ -80,7 +80,7 @@ const addCard = (pokemon) => {
 };
 
 const getPokemonList = () => {
-  fetch(`${baseAPI}pokemon?limit=4&offset=${page * 4}`)
+  fetch(`${baseAPI}pokemon?limit=20&offset=${page * 20}`)
     .then((res) => res.json())
     .then((data) => {
       const fetchedPokemon = data.results;
