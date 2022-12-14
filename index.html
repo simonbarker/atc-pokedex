@@ -26,27 +26,27 @@
             <div class="weight"></div>
           </div>
         </div>
+        <div id="backdrop" class="hidden">
+          <div id="modal">
+            <div id="modal-title">Wartortle</div>
+            <div>
+              <label>Compare with</label>
+              <select id="compare-list"></select>
+            </div>
+            <img
+              id="modal-image"
+              src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/8.png"
+              alt=""
+            />
+            <div>
+              <canvas id="statsChart"></canvas>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="footer">
         Showing 1 to <span id="total-pokemon">20</span>,
         <span class="action-text" onclick="nextPage()">show more ></span>
-      </div>
-      <div id="backdrop" class="hidden">
-        <div id="modal">
-          <div id="modal-title">Wartortle</div>
-          <div>
-            <label>Compare with</label>
-            <select id="compare-list"></select>
-          </div>
-          <img
-            id="modal-image"
-            src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/8.png"
-            alt=""
-          />
-          <div>
-            <canvas id="statsChart"></canvas>
-          </div>
-        </div>
       </div>
     </div>
   </body>
